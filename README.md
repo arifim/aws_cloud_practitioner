@@ -3,7 +3,7 @@ This AWS CCP Prep App helps you prepare and train for the AWS Certified Cloud Pr
 Use this app to study anytime, anywhere from your phone, tablet, computer.
 
 ![Image of Yaktocat]
-(https://ibb.co/pP5Gw0N)
+(https://newrelic.com/assets/partners/aws/logo_aws_0318.png)
 
 ![Image of Yaktocat]
 https://ibb.co/LPYWb8g
