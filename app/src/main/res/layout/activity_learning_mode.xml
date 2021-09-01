@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LearningModeActivity"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/question_box_bg"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_question_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question 0 of 0"
+                android:textColor="@color/aws_orange"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="long_text"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_below="@id/tv_question_count"
+                android:textSize="@dimen/question_text_size"
+                android:layout_marginTop="16dp"
+                android:layout_centerInParent="true"
+
+                />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_answer0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/default_textview">
+                        <ImageView
+                            android:layout_width="@dimen/answer_icon_size"
+                            android:layout_height="@dimen/answer_icon_size"
+                            android:src="@drawable/ic_a"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"/>
+                        <TextView
+                            android:id="@+id/tv_answer0"
+                            android:tag="A"
+                            android:onClick="answerSelected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="long_text"
+                            android:padding="12dp"
+                            android:textColor="@color/answer_text_color"/>
+                    </LinearLayout>
+                        
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/answer_icon_size"
+                            android:layout_height="@dimen/answer_icon_size"
+                            android:src="@drawable/ic_b"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_answer1"
+                            android:tag="B"
+                            android:onClick="answerSelected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Answer"
+                            android:padding="12dp"
+                            android:textColor="@color/answer_text_color"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/answer_icon_size"
+                            android:layout_height="@dimen/answer_icon_size"
+                            android:src="@drawable/ic_c"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"/>
+                        <TextView
+                            android:id="@+id/tv_answer2"
+                            android:tag="C"
+                            android:onClick="answerSelected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="long_text"
+                            android:padding="12dp"
+                            android:textColor="@color/answer_text_color"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="@dimen/answer_icon_size"
+                            android:layout_height="@dimen/answer_icon_size"
+                            android:src="@drawable/ic_d"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"/>
+                        <TextView
+                            android:id="@+id/tv_answer3"
+                            android:tag="D"
+                            android:onClick="answerSelected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/long_text"
+                            android:padding="12dp"
+                            android:textColor="@color/answer_text_color"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_expl_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explanation:"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    android:textColor="@color/aws_orange"/>
+
+                <TextView
+                    android:id="@+id/tv_expl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Expl"
+                    android:visibility="invisible"
+                    android:padding="8dp"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="-60dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/orange_button"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Next question"
+            android:textSize="@dimen/button_text_size"
+            android:onClick="nextButtonCLicked"
+            android:textColor="@color/white" />
+
+
+</LinearLayout>

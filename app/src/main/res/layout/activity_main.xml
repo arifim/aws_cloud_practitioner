@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:layout_marginTop="50dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="Logo"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:src="@drawable/aws_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Certified Cloud Practitioner"
+        android:textSize="24sp"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btn_learning"
+        android:layout_width="220dp"
+        android:layout_height="@dimen/button_height"
+        app:backgroundTint="@null"
+        android:background="@drawable/orange_button"
+        android:onClick="openLearningModeActivity"
+        android:text="Learning mode"
+        android:textSize="@dimen/button_text_size"/>
+
+    <Button
+        android:id="@+id/btn_exam"
+        android:layout_width="220dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="16dp"
+        android:text="Exam mode"
+        app:backgroundTint="@null"
+        android:background="@drawable/orange_button"
+        android:onClick="openExamModeActivity"
+        android:textSize="@dimen/button_text_size"/>
+
+</LinearLayout>

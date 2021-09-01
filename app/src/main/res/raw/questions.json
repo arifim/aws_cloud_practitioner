@@ -1,0 +1,147 @@
+[
+    { 
+        "question": "Which of the following does not contribute significantly to the operational value of a large cloud provider like AWS",
+        "answers": [
+            "Multiregional presence.",
+            "Highly experienced teams of security engineers.",
+            "Deep experience in the retail sphere.",
+            "Metered, pay-per-use pricing."
+        ],
+        "correctAnswers": ["C"],
+        "explanation": "Having globally distributed infrastructure and experienced security engineers makes a provider's infrastructure more reliable. Metered pricing makes a wider range of workloads possible."
+
+    },
+
+    {
+        "question": "Which of the following are signs of a highly available application? (Select TWO.)",
+        "answers": [
+            "A failure in one geographic region will trigger an automatic failover to resources in a different region.",
+            "Applications are protected behind multiple layers of security.",
+            "Virtualized hypervisor-driven systems are deployed as mandated by company policy.",
+            "Spikes in user demand are met through automatically increasing resources."
+        ],
+        "correctAnswers": ["A", "D"],
+        "explanation": "Security and virtualization are both important characteristics of successful cloud workloads, but neither directly impact availability"
+    },
+
+    {
+        "question": "How does the metered payment model make many benefits of cloud computing possible? (Select TWO.)",
+        "answers": [
+            "Greater application security is now possible.",
+            "Experiments with multiple configuration options are now cost-effective.",
+            "Applications are now highly scalable.",
+            "Full-stack applications are possible without the need to invest in capital expenses."
+        ],
+        "correctAnswers": ["B", "D"],
+        "explanation": "Security and scalability are important cloud elements but are not related to metered pricing"
+    },
+
+    {
+        "question": "Which of the following are direct benefits of server virtualization? (Select TWO.)",
+        "answers": [
+            "Fast resource provisioning and launching",
+            "Efficient (high-density) use of resources",
+            "Greater application security",
+            "Elastic application designs"
+        ],
+        "correctAnswers": ["A", "B"],
+        "explanation": "Security and elasticity are important but are not directly related to server virtualization"
+ 
+    },
+
+    {
+        "question": "What is hypervisor?",
+        "answers": [
+            "Hardware device used to provide an interface between storage and compute modules",
+            "Hardware device used to provide an interface between networking and compute modules",
+            "Software used to monitor virtualized operations",
+            "Software used to administrate virtualized resources run on physical infrastructure"
+        ],
+        "correctAnswers": ["D"],
+        "explanation": "A hypervisor is software (not hardware) that administrates virtualized operations."
+    },
+
+    {
+        "question": "Which of the following best describes server virtualization?",
+        "answers": [
+            "'Sharding' data from multiple sources into a single virtual data store",
+            "Logically partitioning physical compute and storage devices into multiple smaller virtual devices",
+            "Aggregating physical resources spread over multiple physical devices into a single virtual device",
+            "Abstracting the complexity of physical infrastructure behind a simple web interface"
+        ],
+        "correctAnswers": ["B"],
+	"explanation" : "Sharding, aggregating remote resources, and abstracting complex infrastructure can all be accomplished using virtualization techniques, but they aren't, of themselves, virtualization."
+    },
+
+    {
+        "question": "Which of the following best describes Infrastructure as a Service products?",
+        "answers": [
+            "Services that hide infrastructure complexity behind a simple interface",
+            "Services that provide a service to end users through a public network",
+            "Services that give you direct control over underlying compute and storage resources",
+            "Platforms that allow developers to run their code over short periods on cloud servers"
+        ],
+        "correctAnswers": ["C"],
+	"explanation": "PaaS products mask complexity, SaaS products provide end-user services, and serverless architectures (like AWS Lambda) let developers run code on cloud servers."
+    },
+
+    {
+        "question": "Which of the following best describes Platform as a Service products?",
+        "answers": [
+            "Services that hide infrastructure complexity behind a simple interface",
+            "Platforms that allow developers to run their code over short periods on cloud servers",
+            "Services that give you direct control over underlying compute and storage resources",
+            "Services that provide a service to end users through a public network"
+        ],
+        "correctAnswers": ["A"],
+	"explanation": "IaaS products provide full infrastructure access, SaaS products provide end-user services, and serverless architectures (like AwS Lambda) let developers run code on cloud servers."
+    },
+
+    {
+        "question": "Which of the following best describes Software as a Service products?",
+        "answers": [
+            "Services that give you direct control over underlying compute and storage resources",
+            "Services that provide a service to end users through a public network",
+            "Services that hide infrastructure complexity behind a simple interface",
+            "Platforms that allow developers to run their code over short periods on cloud servers"
+        ],
+        "correctAnswers": ["B"],
+	"explanation": "Iaas products provide full infrastructure access, PaaS products mask complexity, and serverless architectures (like AWS Lambda) let developers run code on cloud servers."
+    },
+
+    {
+        "question": "Which of the following best describes scalability?",
+        "answers": [
+            "The ability of an application to automatically add preconfigured compute resources to meet increasing demand",
+            "The ability of an application to increase or decrease compute resources to match changing demand",
+            "The ability to more densely pack virtualized resources onto a single physical server",
+            "The ability to bill resource usage using a pay-per-user model"
+        ],
+        "correctAnswers": ["A"],
+	"explanation": "Increasing or decreasing compute resources better describes elasticity. Efficient use of virtualized resources and billing models aren't related directly to scalability."
+    },
+
+    {
+        "question": "Which of the following best describe elasticity?",
+        "answers": [
+            "The ability to more densely pack virtualized resources onto a single physical server",
+            "The ability to bill resource usage using a pay-per-user mode",
+            "The ability of an application to increase or decrease compute resources to match chainging demand",
+            "The ability of an application to automatically add preconfigured compute resources to meet increasing demand"
+        ],
+        "correctAnswers": ["C"],
+	"explanation": "Preconfiguring compute instances before they're used to scale up an application is an element of scalability rather than elasticity. Efficient use of virtualized resources and billing models aren't related directly to elasticity."
+    },
+
+    {
+        "question": "Which of the following characteristics most help AWS provide such scalable services? (Select TWO.)",
+        "answers": [
+            "The enormous number of servers it operates",
+            "The value of its capitalized assets",
+            "Its geographic rich",
+            "Its highly automated infrastructure administration systems"
+        ],
+        "correctAnswers": ["A", "D"],
+	"explanation": "Capitalized assets and geographic reach are important but don't have a direct impact on operational scalability."
+    }
+]

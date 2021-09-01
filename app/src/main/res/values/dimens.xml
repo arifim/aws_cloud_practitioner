@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="answer_icon_size">35dp</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="question_text_size">16sp</dimen>
+    <dimen name="button_height">50dp</dimen>
+</resources>

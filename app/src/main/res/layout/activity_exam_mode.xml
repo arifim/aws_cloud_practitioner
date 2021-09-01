@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamModeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/question_box_bg"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_question_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question 0 of 0"
+                android:textColor="#828282"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/tv_question_count"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/timer_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/timer_icon"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timer"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="long_text"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_below="@id/tv_question_count"
+                android:textSize="@dimen/question_text_size"
+                android:layout_marginTop="16dp"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_answer0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/default_textview">
+                        <ImageView
+                            android:layout_width="@dimen/answer_icon_size"
+                            android:layout_height="@dimen/answer_icon_size"
+                            android:src="@drawable/ic_a"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"/>
+                        <TextView
+                            android:id="@+id/tv_answer0"
+                            android:tag="A"
+                            android:onClick="answerSelected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="long_text"
+                            android:padding="12dp"
+                            android:textColor="@color/answer_text_color"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/answer_icon_size"
+                            android:layout_height="@dimen/answer_icon_size"
+                            android:src="@drawable/ic_b"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_answer1"
+                            android:tag="B"
+                            android:onClick="answerSelected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Answer"
+                            android:padding="12dp"
+                            android:textColor="@color/answer_text_color"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/answer_icon_size"
+                        android:layout_height="@dimen/answer_icon_size"
+                        android:src="@drawable/ic_c"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_answer2"
+                        android:tag="C"
+                        android:onClick="answerSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="long_text"
+                        android:padding="12dp"
+                        android:textColor="@color/answer_text_color"/>
+                </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="@dimen/answer_icon_size"
+                            android:layout_height="@dimen/answer_icon_size"
+                            android:src="@drawable/ic_d"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_answer3"
+                        android:tag="D"
+                        android:onClick="answerSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/long_text"
+                        android:padding="12dp"
+                        android:textColor="@color/answer_text_color"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-55dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <Button
+                android:id="@+id/skipButton"
+                android:layout_width="160dp"
+                android:layout_height="@dimen/button_height"
+                android:backgroundTint="@color/answer_text_color"
+                android:text="Skip"
+                android:textSize="@dimen/button_text_size"
+                android:onClick="skipButtonCLicked"
+                android:textColor="@color/white" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="160dp"
+                android:layout_height="@dimen/button_height"
+                android:backgroundTint="@color/aws_orange"
+                android:text="Submit"
+                android:textSize="@dimen/button_text_size"
+                android:onClick="submitButtonCLicked"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
